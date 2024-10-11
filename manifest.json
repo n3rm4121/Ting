@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Ting",
+    "version": "1.0",
+    "description": "Do you often forget to drink water, take breaks, or stretch while sitting in front of the computer for hours? Ting is here to remind you at the right time. Ting will remind you to complete repetitive, regular tasks directly from your browser. Say goodbye to sticky notes and annoying alarms, and let Ting keep you on track effortlessly.",
+    "permissions": ["storage", "notifications", "alarms"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icon48.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }

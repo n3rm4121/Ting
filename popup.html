@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ting</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f4f6;
+    }
+    .custom-shadow {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 w-96 transition-colors duration-200">
+  <div class="bg-gray-200 rounded-lg custom-shadow p-6">
+    <div class="flex justify-between items-center mb-6">
+        <span class="justify-center items-center gap-1 flex">
+            <img src="/icon128.png" alt="Ting" class="w-12 inline h-12">
+            <h1 class="text-4xl font-bold text-center inline text-gray-800">Ting</h1>
+        </span>
+        
+      <button id="toggle-form" class="text-blue-500 hover:text-blue-600 transition-colors duration-200">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+        </svg>
+      </button>
+    </div>
+    <form id="reminder-form" class="space-y-4 hidden">
+      <div class="space-y-2">
+        <label for="task" class="block text-sm font-medium text-gray-700">Task:</label>
+        <input type="text" id="task" name="task" required class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-800 transition-all">
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="space-y-2">
+          <label for="category" class="block text-sm font-medium text-gray-700">Category:</label>
+          <select id="category" name="category" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-800 transition-all">
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="health">Health</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="space-y-2">
+          <label for="priority" class="block text-sm font-medium text-gray-700">Priority:</label>
+          <select id="priority" name="priority" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-800 transition-all">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+      </div>
+      <div class="space-y-2">
+        <label for="time" class="block text-sm font-medium text-gray-700">Time:</label>
+        <input type="datetime-local" id="time" name="time" required class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-800 transition-all">
+      </div>
+
+      <!-- <div class="space-y-2">
+        <label class="block text-sm font-medium text-gray-700">Reminder Type:</label>
+        <div class="flex items-center">
+          <input type="radio" id="repeat-daily" name="reminder-type" value="daily" class="mr-2">
+          <label for="repeat-daily" class="mr-4">Repeat Daily</label>
+          <input type="radio" id="repeat-interval" name="reminder-type" value="interval" class="mr-2">
+          <label for="repeat-interval">Repeat Every:</label>
+          <input type="number" id="interval" name="interval" min="1" class="w-16 mx-2" placeholder="minutes">
+          <span>minutes</span>
+        </div>
+      </div> -->
+      <div class="space-y-2">
+        <label class="flex items-center">
+          <input type="checkbox" id="set-reminder" class="mr-2">
+          <span class="text-sm font-medium text-gray-700">Set Repeat Time </span>
+        </label>
+      </div>
+      <div id="reminder-options" style="display: none;">
+        
+      
+        <div class="space-y-2">
+          <label class="block text-sm font-medium text-gray-700">Reminder Type:</label>
+          <div class="flex items-center">
+            <input type="radio" id="repeat-daily" name="reminder-type" value="daily" class="mr-2">
+            <label for="repeat-daily" class="mr-4">Repeat Daily</label>
+            <input type="radio" id="repeat-interval" name="reminder-type" value="interval" class="mr-2">
+            <label for="repeat-interval">Repeat Every:</label>
+            <input type="number" id="interval" name="interval" min="1" class="w-16 mx-2" placeholder="minutes">
+            <span>minutes</span>
+          </div>
+        </div>
+      </div>    
+
+      
+      <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all">
+        Set Reminder
+      </button>
+    </form>
+    <div id="tasks-list" class="mt-6 space-y-2"></div>
+    <div class="mt-6 flex justify-between items-center">
+      <button id="clear-all" class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition-all">
+        Clear All
+      </button>
+      <span id="task-count" class="text-sm text-white bg-blue-600 px-3 py-1 rounded-full"></span>
+    </div>
+  </div>
+  <div id="toast" class="fixed bottom-4 right-4 px-4 py-2 bg-green-500 text-white rounded-md shadow-lg transition-opacity duration-300 opacity-0">
+    Task added successfully!
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

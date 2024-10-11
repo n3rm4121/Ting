@@ -55,4 +55,4 @@ If you'd like to contribute to the development of **Ting**, follow these steps:
 
 ## Support
 
-If you encounter any issues or have questions, feel free to open an issue on GitHub, or reach out via email.
+If you encounter any issues or have questions, feel free to open an issue on GitHub, or reach out via [Email](mailto:nirmaldhakal2050@gmail.com)

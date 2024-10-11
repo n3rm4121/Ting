@@ -58,7 +58,7 @@ function checkReminders() {
         // create a notification
         chrome.notifications.create({
           type: "basic",
-          iconUrl: "icon.png",
+          iconUrl: "icon48.png",
           title: `Task Reminder: ${task.category}`,
           message: `It's time to: ${task.task} (Priority: ${task.priority})`,
         });

@@ -3,11 +3,12 @@
 **Ting** is a simple and efficient Chrome extension designed to help you stay on track with your regular tasks, whether it's drinking water, taking breaks, or completing repetitive duties. With **Ting**, say goodbye to sticky notes, alarms, and distractions—let it effortlessly remind you to do what's important at the right time.
 
 # Screenshots
+
 Here are some screenshots of **Ting** in action:
 
-<img width="287" alt="image" src="https://github.com/user-attachments/assets/9fa30ab1-5f6a-4212-a7f5-6bafaca51e2e">
-<img width="287" alt="image" src="https://github.com/user-attachments/assets/6f3e7243-488a-415d-9308-0e5b91385e92">
-<img width="287" alt="image" src="https://github.com/user-attachments/assets/93ba70a5-81d4-4661-909a-7501382d3337">
+<img width="287" alt="image" src='/screenshots/1.png'>
+<img width="287" alt="image" src="/screenshots/2.png">
+<img width="287" alt="image" src="/screenshots/3.png">
 
 ## Features
 
@@ -38,12 +39,14 @@ Here are some screenshots of **Ting** in action:
 ## Permissions
 
 Ting requires the following permissions:
+
 - **Notifications**: To send you timely reminders.
 - **Storage**: To save your tasks and reminder settings.
 
 ## Contributing
 
 If you'd like to contribute to the development of **Ting**, follow these steps:
+
 1. Fork this repository.
 2. Create your feature branch: `git checkout -b feature/AmazingFeature`
 3. Commit your changes: `git commit -m 'Add AmazingFeature'`

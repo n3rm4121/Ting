@@ -6,9 +6,11 @@
 
 Here are some screenshots of **Ting** in action:
 
-<img width="287" alt="image" src='/screenshots/1.png'>
-<img width="287" alt="image" src="/screenshots/2.png">
-<img width="287" alt="image" src="/screenshots/3.png">
+<div>
+<img alt="image" src='/screenshots/1.png'>
+<img alt="image" src="/screenshots/2.png">
+<img alt="image" src="/screenshots/3.png">
+<div>
 
 ## Features
 

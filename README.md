@@ -4,9 +4,9 @@
 
 # Screenshots
 
-<img style={{ display: 'inline', width: '287px' }} alt="image" src="/screenshots/1.png" />
-<img style={{ display: 'inline', width: '287px' }} alt="image" src="/screenshots/2.png" />
-<img style={{ display: 'inline', width: '287px' }} alt="image" src="/screenshots/3.png" />
+<img src="/screenshots/1.png" width="287" alt="image" style="display:inline;" />
+<img src="/screenshots/2.png" width="287" alt="image" style="display:inline;" />
+<img src="/screenshots/3.png" width="287" alt="image" style="display:inline;" />
 
 ## Features
 

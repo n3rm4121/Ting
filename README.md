@@ -4,13 +4,9 @@
 
 # Screenshots
 
-Here are some screenshots of **Ting** in action:
-
-<div>
-<img alt="image" src='/screenshots/1.png'>
-<img alt="image" src="/screenshots/2.png">
-<img alt="image" src="/screenshots/3.png">
-<div>
+<img style={{ display: 'inline', width: '287px' }} alt="image" src="/screenshots/1.png" />
+<img style={{ display: 'inline', width: '287px' }} alt="image" src="/screenshots/2.png" />
+<img style={{ display: 'inline', width: '287px' }} alt="image" src="/screenshots/3.png" />
 
 ## Features
 

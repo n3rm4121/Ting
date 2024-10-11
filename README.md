@@ -4,9 +4,11 @@
 
 # Screenshots
 
-<img src="/screenshots/1.png" width="287" alt="image" style="display:inline;" />
-<img src="/screenshots/2.png" width="287" alt="image" style="display:inline;" />
-<img src="/screenshots/3.png" width="287" alt="image" style="display:inline;" />
+Here are some screenshots of **Ting** in action:
+
+<img width="287" alt="image" src="https://github.com/user-attachments/assets/9fa30ab1-5f6a-4212-a7f5-6bafaca51e2e">
+<img width="287" alt="image" src="https://github.com/user-attachments/assets/6f3e7243-488a-415d-9308-0e5b91385e92">
+<img width="287" alt="image" src="https://github.com/user-attachments/assets/93ba70a5-81d4-4661-909a-7501382d3337">
 
 ## Features
 
